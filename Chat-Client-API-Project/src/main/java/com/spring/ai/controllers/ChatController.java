@@ -19,12 +19,15 @@ public class ChatController {
 
 	@Autowired
 	private ChatService chatService;
+	
+	
 
 	@GetMapping("/chat")
 	public ResponseEntity<?> chat(@RequestParam("q") String query) {
 		log.info("User Query is {} ", query);
 
 		var resultResponse = chatService.chat(query);
+		//var resultResponse = chatService.chat1(query);
 
 		return ResponseEntity.status(HttpStatus.OK).body(resultResponse);
 	}

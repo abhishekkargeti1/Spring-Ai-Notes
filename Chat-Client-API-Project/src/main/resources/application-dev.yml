@@ -1,12 +1,25 @@
 # Open Ai Config 
+#
+#spring:
+#  ai:
+#    openai:
+#      api-key: ${OPENAi_API_KEY}  # Set in Enviorment Variable
+#      chat:
+#        model: gpt-4.1
+#        temperature: 0.2 
+        
+# Ollama Ai Config
 
 spring:
   ai:
     openai:
-      api-key: ${OPENAi_API_KEY}  # Set in Enviorment Variable
+        api-key: ${OPENAi_API_KEY}  # Set in Enviorment Variable
+        chat:
+           model: gpt-4.1
+           temperature: 0.2 
+    ollama:
+      base-url: http://localhost:11434
       chat:
-        model: gpt-4.1
-        temperature: 0.2 
-        
-
+        model: codellama:latest
+        temperature: 0.7
 

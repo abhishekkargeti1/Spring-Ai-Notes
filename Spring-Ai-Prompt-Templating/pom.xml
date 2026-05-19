@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spring.ai</groupId>
-	<artifactId>AiFirstProject</artifactId>
+	<artifactId>Spring-Ai-Prompt-Templating</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>AiFirstProject</name>
-	<description>This is forst project for Spring Ai </description>
+	<name>Spring-Ai-Prompt-Templating</name>
+	<description>This is prompt templating project of ai </description>
 	<url/>
 	<licenses>
 		<license/>
