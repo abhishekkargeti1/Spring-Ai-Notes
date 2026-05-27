@@ -24,7 +24,7 @@ class SpringAiAdvisorsApplicationTests {
 		
 		String query ="Java";
 		String chatResponse = chatService.chatTemplate(query);
-		//System.out.println("Chat Response is "+chatResponse);
+		System.out.println("Chat Response is "+chatResponse);
 	}
 
 }
