@@ -26,6 +26,9 @@ public class CustomAdvisor implements CallAdvisor, StreamAdvisor{
 		
 		Flux<ChatClientResponse> chatClientResponse = streamAdvisorChain.nextStream(chatClientRequest);
 		
+
+				
+		
 		return chatClientResponse;
 	}
 
