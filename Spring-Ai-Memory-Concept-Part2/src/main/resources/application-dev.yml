@@ -1,0 +1,31 @@
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/aichatdb
+      username: root
+      password: 1808
+  ai:
+    chat:
+      client:
+        enabled: false
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: ALWAYS
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        model: gpt-4.1
+        temperature: 0.2
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: codellama:latest
+        temperature: 0.7
+
+
+
+#Logging Config
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG 
