@@ -1,0 +1,31 @@
+spring:
+  datasource:
+        url: jdbc:mariadb://localhost:3308/aichatdb
+        username: root
+        password: 1808
+  ai:
+    vectorstore:
+      mariadb:
+        initialize-schema: true
+        distance-type: COSINE
+        dimensions: 1536
+    chat:
+      client:
+        enabled: false
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        model: gpt-4.1
+        temperature: 0.2
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: codellama:latest
+        temperature: 0.7
+
+
+
+#Logging Config
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG 
