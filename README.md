@@ -25,6 +25,7 @@ This repository contains practical examples, concepts, and implementations of th
 - Multi-Model Integration
 - AI-based REST APIs
 - AI-Streaming-Concept
+- And Many More Concept
   
 The main objective of this repository is to help Java developers learn and implement AI concepts using Spring Boot and Spring AI in a practical way. Spring AI provides a Spring-friendly abstraction layer for integrating AI models and providers into enterprise Java applications. :contentReference[oaicite:0]{index=0}
 
