@@ -1,10 +1,8 @@
 package com.spring.ai.serviceimpl;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ai.chat.client.ChatClient;
